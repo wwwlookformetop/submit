@@ -1,0 +1,72 @@
+create database onlineSubmission;
+use onlineSubmission;
+
+CREATE TABLE writer (
+writerId	int	Not null primary key,
+password	Varchar(30)	Not null,
+name	Varchar(30)	Not null,
+phone	Nchar(11)	Not null,
+address	Varchar(100)	Not null ,
+email	Varchar(30)	Not null,
+cardID	Varchar(30)	Not null
+)
+;
+
+CREATE TABLE article (
+articleId	int	Not null primary key,
+title	Varchar(50)	Not null,
+abstract	Varchar(1000)	Not null,
+type	Varchar(50)	Not null,
+length	int	Not null,
+time	datetime	Not null ,
+reviewfee	float	Not null,
+reviewfeeStatus	Varchar(30)	Not null,
+writerId	int	Not null ,
+foreign key(writerId) references writer(writerID)
+)
+;
+
+
+CREATE TABLE reviewer (
+reviewerID	int	Not null primary key,
+password	Varchar(30)	Not null ,
+name	Varchar(30)	Not null,
+phone	Nchar(11)	Not null,
+)
+;
+
+
+CREATE TABLE administrator (
+adminID	int	Not null primary key,
+password	Varchar(30)	Not null ,
+name	Varchar(30)	Not null,
+phone	Nchar(11)	Not null
+)
+;
+
+
+CREATE TABLE review (
+reviewerID	int	Not null,
+articleID	int	Not null,
+reviewStatus	Varchar(30)	Not null,
+passed	Varchar(30)	,
+comments	Varchar(1000)	,
+primary key(reviewerID,articleID),
+foreign key(reviewerID) references reviewer(reviewerID),
+foreign key(articleID) references article(articleID)
+)
+;
+
+CREATE TABLE articleManagement (
+adminID	int	Not null,
+articleID	int	Not null,
+date	datetime	Not null,
+articleFee	float	,
+articleFeeStatus	Varchar(30)	Not null,
+spaceFee	float	,
+spaceFeeStatus	Varchar(30)	Not null,
+primary key(adminID,articleID),
+foreign key(adminID) references administrator(adminID),
+foreign key(articleID) references article(articleID)
+)
+;

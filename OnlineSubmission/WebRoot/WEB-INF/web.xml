@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <display-name></display-name>	
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateAllServlet</servlet-name>
+    <servlet-class>com.online.web.reviewer.UpdateAllServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ReviewerLoginServlet</servlet-name>
+    <servlet-class>com.online.web.reviewer.ReviewerLoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DealUpdateServlet</servlet-name>
+    <servlet-class>com.online.web.reviewer.DealUpdateServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdatePasswordServlet</servlet-name>
+    <servlet-class>com.online.web.reviewer.UpdatePasswordServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DealUpdatePasswordServlet</servlet-name>
+    <servlet-class>com.online.web.reviewer.DealUpdatePasswordServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AllArticleServlet</servlet-name>
+    <servlet-class>com.online.web.reviewer.AllArticleServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>OneArticleServlet</servlet-name>
+    <servlet-class>com.online.web.reviewer.OneArticleServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DealArticleServlet</servlet-name>
+    <servlet-class>com.online.web.reviewer.DealArticleServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ReviewerLogoutServlet</servlet-name>
+    <servlet-class>com.online.web.reviewer.ReviewerLogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AdminLoginServlet</servlet-name>
+    <servlet-class>com.online.web.admin.AdminLoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AdminLogoutServlet</servlet-name>
+    <servlet-class>com.online.web.admin.AdminLogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DownloadServlet</servlet-name>
+    <servlet-class>com.online.web.down.DownloadServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetListServlet</servlet-name>
+    <servlet-class>com.online.web.admin.GetListServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ReviewerManagerServlet</servlet-name>
+    <servlet-class>com.online.web.admin.ReviewerManagerServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SearchArticlesServlet</servlet-name>
+    <servlet-class>com.online.web.admin.SearchArticlesServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>UpdateAllServlet</servlet-name>
+    <url-pattern>/servlet/UpdateAllServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ReviewerLoginServlet</servlet-name>
+    <url-pattern>/servlet/ReviewerLoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DealUpdateServlet</servlet-name>
+    <url-pattern>/servlet/DealUpdateServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdatePasswordServlet</servlet-name>
+    <url-pattern>/servlet/UpdatePasswordServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DealUpdatePasswordServlet</servlet-name>
+    <url-pattern>/servlet/DealUpdatePasswordServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AllArticleServlet</servlet-name>
+    <url-pattern>/servlet/AllArticleServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OneArticleServlet</servlet-name>
+    <url-pattern>/servlet/OneArticleServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DealArticleServlet</servlet-name>
+    <url-pattern>/servlet/DealArticleServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ReviewerLogoutServlet</servlet-name>
+    <url-pattern>/servlet/ReviewerLogoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdminLoginServlet</servlet-name>
+    <url-pattern>/servlet/AdminLoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdminLogoutServlet</servlet-name>
+    <url-pattern>/servlet/AdminLogoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DownloadServlet</servlet-name>
+    <url-pattern>/servlet/DownloadServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetListServlet</servlet-name>
+    <url-pattern>/servlet/GetListServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ReviewerManagerServlet</servlet-name>
+    <url-pattern>/servlet/ReviewerManagerServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SearchArticlesServlet</servlet-name>
+    <url-pattern>/servlet/SearchArticlesServlet</url-pattern>
+  </servlet-mapping>
+  
+  <filter>
+	<filter-name>reviewerFilter</filter-name>
+	<filter-class>com.online.filter.ReviewerFilter</filter-class>
+	
+	</filter>
+	<filter-mapping>
+	<filter-name>reviewerFilter</filter-name>
+	<url-pattern>/reviewer/*</url-pattern>
+	
+	</filter-mapping>
+  	 <filter>
+  		<filter-name>onlinefilter</filter-name>
+  		<filter-class>com.online.filter.onlinefilter</filter-class>
+  </filter>
+  <filter-mapping>
+        <filter-name>onlinefilter</filter-name>
+     	<url-pattern>/servlet/upload</url-pattern>
+     	
+     	<url-pattern>/servlet/find</url-pattern>
+     	<url-pattern>/update.jsp</url-pattern>
+     	<url-pattern>/servlet/look</url-pattern>
+  </filter-mapping>
+  <servlet>
+    <servlet-name>RegisterServlet</servlet-name>
+    <servlet-class>com.online.web.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>loginServlet</servlet-name>
+    <servlet-class>com.online.web.loginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>showpeople</servlet-name>
+    <servlet-class>com.online.web.showpeople</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>QuitServlet</servlet-name>
+    <servlet-class>com.online.web.QuitServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>lookServlet</servlet-name>
+    <servlet-class>com.online.web.lookServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>upload</servlet-name>
+    <servlet-class>com.online.web.upload</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>update</servlet-name>
+    <servlet-class>com.online.web.update</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>look</servlet-name>
+    <servlet-class>com.online.web.look</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>give</servlet-name>
+    <servlet-class>com.online.web.give</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>download</servlet-name>
+    <servlet-class>com.online.web.download</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>allocate</servlet-name>
+    <servlet-class>com.online.web.admin.allocate</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>check</servlet-name>
+    <servlet-class>com.online.web.admin.check</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SpaceMoney</servlet-name>
+    <servlet-class>com.online.web.admin.SpaceMoney</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ArticleMange</servlet-name>
+    <servlet-class>com.online.web.admin.ArticleMange</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>lookspace</servlet-name>
+    <servlet-class>com.online.web.lookspace</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>givespace</servlet-name>
+    <servlet-class>com.online.web.givespace</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>give2</servlet-name>
+    <servlet-class>com.online.web.give2</servlet-class>
+  </servlet>
+    <servlet-mapping>
+    <servlet-name>loginServlet</servlet-name>
+    <url-pattern>/servlet/loginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RegisterServlet</servlet-name>
+    <url-pattern>/servlet/RegisterServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>showpeople</servlet-name>
+    <url-pattern>/servlet/showpeople</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>QuitServlet</servlet-name>
+    <url-pattern>/servlet/QuitServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>lookServlet</servlet-name>
+    <url-pattern>/servlet/lookServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>upload</servlet-name>
+    <url-pattern>/servlet/upload</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>update</servlet-name>
+    <url-pattern>/servlet/update</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>look</servlet-name>
+    <url-pattern>/servlet/look</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>give</servlet-name>
+    <url-pattern>/servlet/give</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>download</servlet-name>
+    <url-pattern>/servlet/download</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>allocate</servlet-name>
+    <url-pattern>/servlet/allocate</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>check</servlet-name>
+    <url-pattern>/servlet/check</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SpaceMoney</servlet-name>
+    <url-pattern>/servlet/SpaceMoney</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ArticleMange</servlet-name>
+    <url-pattern>/servlet/ArticleMange</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>lookspace</servlet-name>
+    <url-pattern>/servlet/lookspace</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>givespace</servlet-name>
+    <url-pattern>/servlet/givespace</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>give2</servlet-name>
+    <url-pattern>/servlet/give2</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
